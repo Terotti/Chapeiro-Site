@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapeiro Milionário - Cursos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* Ajuste fino para o novo formato de imagem direta no HTML */
+        .course-card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação Global -->
+    <header class="navbar">
+        <div class="logo">CHAPEIRO<span>MILIONÁRIO</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendas.html" class="active">Cursos</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Vendas -->
+    <section class="vendas-container">
+        <div class="vendas-header">
+            <h2>Nossos <span class="gradient-text">Treinamentos</span> Exclusivos</h2>
+            <p>Adquira as habilidades fundamentais para mudar de vida, otimizar sua produção ou dominar as pistas.</p>
+        </div>
+
+        <div class="courses-grid">
+            <!-- Curso 1 -->
+            <div class="course-card">
+                <img src="curso_milionario.png" alt="Como se Tornar um Milionário" class="course-card-image">
+                <div class="course-content">
+                    <h3>Como se Tornar um Milionário</h3>
+                    <p>O mindset e as estratégias financeiras reais de quem saiu da base e conquistou o topo.</p>
+                    <span class="price">R$ 997,00</span>
+                    <button class="btn btn-primary" onclick="abrirCheckout('Como se Tornar um Milionário')">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="course-card">
+                <img src="curso_whopper.png" alt="5 Whoppers com Uma Mão Só" class="course-card-image">
+                <div class="course-content">
+                    <h3>5 Whoppers com Uma Mão Só</h3>
+                    <p>Técnicas avançadas de agilidade, controle de temperatura e montagem simultânea ultra-rápida.</p>
+                    <span class="price">R$ 197,00</span>
+                    <button class="btn btn-primary" onclick="abrirCheckout('5 Whoppers com Uma Mão Só')">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="course-card">
+                <img src="curso_moonwalk.png" alt="Moonwalk de um Pé Só" class="course-card-image">
+                <div class="course-content">
+                    <h3>Moonwalk de um Pé Só</h3>
+                    <p>Quebre as leis da física e domine o passo de dança mais impressionante e exclusivo do mundo.</p>
+                    <span class="price">R$ 297,00</span>
+                    <button class="btn btn-primary" onclick="abrirCheckout('Moonwalk de um Pé Só')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Janela de Checkout Integrada -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <h3>Processando Pedido 🔒</h3>
+            <p>Você está adquirindo: <strong id="cursoSelecionado" class="gradient-text"></strong></p>
+            <p>Insira seus dados para concluir a transação de forma segura.</p>
+            <input type="text" placeholder="Nome Completo" class="form-input">
+            <input type="email" placeholder="Seu Melhor E-mail" class="form-input">
+            
+            <!-- Botão com a função de sucesso e chuva de dinheiro -->
+            <button class="btn btn-primary full-width" onclick="finalizarMatricula()">Finalizar Matrícula</button>
+            <button class="btn btn-close" onclick="fecharCheckout()">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Vinculação do Arquivo JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>

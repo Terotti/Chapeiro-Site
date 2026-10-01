@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapeiro Milionário - Minha História</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* Estilos exclusivos para a timeline da história */
+        .story-timeline {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            text-align: left;
+        }
+        .story-step {
+            background: #121212;
+            border-left: 4px solid #d4af37;
+            padding: 25px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .story-step:hover {
+            transform: translateX(10px);
+            background: #161616;
+        }
+        .timestamp {
+            font-size: 0.85rem;
+            color: #d4af37;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .story-step h4 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .story-step p {
+            color: #b0b0b0 !important;
+            font-size: 1rem !important;
+            line-height: 1.6;
+            margin: 0 !important;
+            text-align: left !important;
+        }
+        .quote-box {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px dashed #d4af37;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-style: italic;
+            color: #fce0ad;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação Global -->
+    <header class="navbar">
+        <div class="logo">CHAPEIRO<span>MILIONÁRIO</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendas.html">Cursos</a></li>
+                <li><a href="sobre.html" class="active">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="about-container">
+        <div class="about-content">
+            <span class="badge">A Trajetória Oficial</span>
+            <h2>Minha <span class="gradient-text">Epopeia</span></h2>
+            <h3>De pedinte no balcão a soberano absoluto do território nacional.</h3>
+            
+            <p>Muitos olham para a minha mansão, os helicópteros pousados no teto, a Lamborghini preta e a Bugatti roxa e acham que foi sorte. Mas tudo começou com uma chapa quente, uma ideia absurda e dois Whoppers. Conheça a cronologia do meu império:</p>
+
+            <!-- Linha do Tempo Baseada no Roteiro -->
+            <div class="story-timeline">
+                
+                <!-- Passo 1 -->
+                <div class="story-step">
+                    <span class="timestamp">0:00 — O Começo</span>
+                    <h4>A Calçada e a Fome</h4>
+                    <p>Eu não tinha casa, não tinha dinheiro e vestia um uniforme velho do BK. Segurando uma placa de papelão que dizia <strong>"POR FAVOR, ME AJUDE"</strong>, eu só tinha uma certeza no estômago: a fome. Foi o fundo do poço que acendeu a minha faísca.</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="story-step">
+                    <span class="timestamp">0:20 — O Emprego</span>
+                    <h4>A Entrevista Perfeita</h4>
+                    <p>Decidi entrar no Burger King para mudar meu destino. Quando o gerente me perguntou se eu sabia fazer hambúrguer ou fritar batata, minha resposta foi um sincero 'Não'. Ele me olhou e disse: <em>"Então você é perfeito"</em>. Ali, o Chapeiro nascia.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="story-step">
+                    <span class="timestamp">0:50 — A Transformação</span>
+                    <h4>O Estalo de Gênio</h4>
+                    <p>Virei uma máquina na cozinha. Era hambúrguer voando na chapa, batata na fritadeira, refrigerante enchendo e moedas acumulando. Até que parei, olhei para a fumaça da chapa e pensei: <strong>"E se eu simplesmente comprar o Burger King?"</strong>. Uma ideia completamente normal para uma terça-feira.</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="story-step">
+                    <span class="timestamp">1:20 — O Plano</span>
+                    <h4>A Saída Triunfal</h4>
+                    <p>Larguei o avental no meio do expediente. Quando o gerente me perguntou assustado para onde eu estava indo, apenas coloquei meus óculos escuros e mandei a real: <em>"Vou comprar a empresa"</em>. Saí ao som de uma trilha sonora de gangster.</p>
+                </div>
+
+                <!-- Passo 5 -->
+                <div class="story-step">
+                    <span class="timestamp">1:40 — O Enriquecimento Inexplicável</span>
+                    <h4>A Negociação Suprema</h4>
+                    <p>Comecei a vender hambúrgueres na rua com uma estratégia de vendas revolucionária que quebrou a lógica do capitalismo. Se o cliente achava R$ 10 caro, eu subia para R$ 20. E por algum motivo que a economia tradicional não consegue explicar, eles compravam e eu fiquei podre de rico.</p>
+                </div>
+
+                <!-- Passo 6 -->
+                <div class="story-step">
+                    <span class="timestamp">2:00 — A Compra do BK</span>
+                    <h4>Dono da Franquia</h4>
+                    <p>Cheguei na reunião de terno alinhado. Quando os executivos me perguntaram quanto eu tinha para oferecer pela corporação, abri uma mala transbordando notas e respondi: <strong>"Tudo"</strong>. Negócio fechado instantaneamente.</p>
+                </div>
+
+                <!-- Passo 7 -->
+                <div class="story-step">
+                    <span class="timestamp">2:20 — A Megalomania</span>
+                    <h4>Comprando o Brasil</h4>
+                    <p>Ser dono do Burger King era pouco. Olhei pela janela e decidi comprar o país inteiro. Diante do silêncio do mapa do Brasil, fiz a minha oferta final e irrecusável: <strong>coloquei dois Whoppers na mesa</strong>. Eles aceitaram na hora.</p>
+                </div>
+
+                <!-- Passo 8 -->
+                <div class="story-step">
+                    <span class="timestamp">2:40 — O Estado Atual</span>
+                    <h4>O Topo do Mundo (E Além)</h4>
+                    <p>Hoje sou dono do Burger King, dono do Brasil e tudo isso porque eu sabia fazer um hambúrguer como ninguém. Mas o jogo não para por aqui...</p>
+                    <div class="quote-box">
+                        💥 PRÓXIMO CAPÍTULO: PARTE 2 — ELE COMPRA A LUA 🌕🍔
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="vendas.html" class="btn btn-primary" style="margin-top: 50px; margin-bottom: 30px;">Aprenda o Método do Hambúrguer de Ouro</a>
+        </div>
+    </main>
+
+</body>
+</html>
